@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(white 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  font-family: 'Manjari', sans-serif;
+}
+
+.title h1 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.9em;
+}
+
+.contenedor {
+  background: #fff;
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.6em;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .barraLateral,
+.contenedor .footer,
+.contenedor .div {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.contenedor .header,
+.contenedor .footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.contenedor .contenido {
+  grid-column: span 3;
+}
+
+.contenedor .barraLateral {
+  grid-column: span 2;
+}
+
+.contenido article {
+  background-color: thistle;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+}
+
+.contenido article h1,
+.contenido article p {
+  padding: 10px;
+}
+
+.contenedor .publicacionesRelacionadas {
+  background-color: blueviolet;
+  color: white;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.contenedor .publicacionesRelacionadas:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #070707;
+}
+
+.contenedor .barraLateral img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.contenedor .barraLateral iframe {
+  padding: 10px;
+}
+/*# sourceMappingURL=estilo.css.map */
