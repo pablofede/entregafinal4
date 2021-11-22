@@ -88,6 +88,9 @@ a {
 .contenedor .barraLateral iframe {
     padding: 10px;
 }
+form {
+  background-color: #a4a4a4;
+}
 @media screen and (max-width: 768px) {
     .header {
         text-align: center;
